@@ -1,0 +1,240 @@
+/*
+Theme Name: Boot Theme 4
+Theme URI: http://btcny.com
+Author: Fred Shequine
+Author URI: http://btcny.com
+Description: Bootstrap 4 based Custom theme for project.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: btc
+Text Domain: btc
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// Core functions, mixins, variables for use in other things
+
+@import "../bower_components/bootstrap/scss/_functions.scss";
+@import "../bower_components/bootstrap/scss/_mixins.scss";
+@import "../bower_components/bootstrap/scss/_variables.scss";
+
+/* Fonts & Mixins */
+
+@import url('//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic');
+@import url('//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic');
+@import url('//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic');
+
+@mixin source-sans-pro {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+@mixin open-sans {
+	font-family: 'Open Sans', sans-serif;
+}
+@mixin roboto {
+	font-family: 'Roboto', sans-serif;
+}
+@mixin font-1 {
+	font-family: helvetica, arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* Fonts: */
+
+//$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-sans-serif: 'Roboto', sans-serif;
+//$font-family-sans-serif: 'Source Sans Pro', sans-serif;
+
+/* Colors: */
+
+$white: #ffffff;
+$black: #333333;
+$gray: #999999;
+$gray-green: lighten(#107107, 0%);
+$gray-lighter: #eceeef;
+
+$brand-primary: $gray-green;
+$brand-secondary: $gray-green;
+$orange: rgba(249, 94, 11, 1.00);
+/* borders */
+
+$header-footer-border: 1px solid $gray-lighter;
+
+/* general site wide styles */
+
+body {
+	//@include font-1;
+	font-family: $font-family-sans-serif;
+	color: $black;
+}
+h1,
+h2,
+h3,
+h4 {
+	//font-weight: 500;
+}
+strong {font-weight: 700;}
+em {font-style: italic;}
+i {}
+a {
+    color: $brand-primary;
+    transition: all .2s ease-in-out;
+}
+a:hover {
+	text-decoration: none;
+	color: $gray;
+}
+
+/* header & navigation styles */
+
+.header {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+	padding-bottom: 0;
+	border-bottom: none;
+	background-color: transparent;
+	.nav-title {
+		font-size: 14px;
+		margin-right: 5px;
+		float: left;
+		position: relative;
+		top: 5px;
+	}
+	.navbar-toggler:hover {
+		color: $orange;
+		span, i {
+			color: $orange;
+		}
+	}
+	.navbar-toggler {
+		padding: 0;
+		margin-left: auto;
+		border: none;
+		&:focus {
+		    outline: none;
+		    /* outline: 5px auto -webkit-focus-ring-color; */
+		}
+		i {
+			font-size: 26px;
+			//color: $brand-secondary;
+			transform: rotate(180deg);
+			transition: all .2s ease-in-out;
+		}
+		i:hover, i:active, i:focus, button:hover, button:active, button:focus {
+			cursor: pointer;
+			//color: $brand-secondary;
+		}
+	}
+	.navbar-toggler.collapsed {
+		i {
+			transform: rotate(0deg);
+			transition: all .2s ease-in-out;
+		}
+	}
+}
+.navbar-nav {
+	.nav-link {
+		padding: 10px 25px 10px 0px;
+		text-transform: uppercase;
+		//width: 150px;
+	}
+	.nav-link.active {
+		color: lighten($gray-green, 7%);
+	}
+	.dropdown-item:focus, .dropdown-item:hover {
+		color: $white;
+	    background-color: lighten($gray-green, 0%);
+	}
+	.dropdown-item.active, .dropdown-item:active {
+	    background-color: $gray-green;
+	}
+}
+
+/* Main styles */
+
+.main-column {
+	margin-top: 25px;
+	padding: 20px;
+	.main {
+		h1, h2, h3, h4 {
+			margin-bottom: 1rem;
+		}
+		.post-title {
+			color: $brand-primary;
+			font-size: 2rem;
+		}
+		.post-meta {
+			font-size: 1.25rem;
+			color: $gray;
+			margin-bottom: 1rem;
+		}
+		.wp-post-image {
+			margin-bottom: 1rem;
+		}
+	}
+}
+.site-title {
+	margin: 10px 0 10px 0;
+	padding: 0 0 0 0;
+}
+.site-description {
+	font-size: 1.25rem;
+}
+
+/* sidebar styles */
+
+.sidebar-column {
+	margin-top: 50px;
+	h3 {
+		font-size: 1.35rem;
+	}
+	.widget-title {
+		font-size: 1.35rem;
+	}
+	.input-group {
+		margin-bottom: 20px;
+	}
+	input.search-field {
+		width: 65% !important;
+		margin-right: 10px;
+	}
+}
+
+/* footer  styles */
+
+.footer-column {
+	p {
+		border-top: $header-footer-border;
+		padding-top: 20px;
+	}
+}
+
+// Wordpress required alignment classes, for visual editor styles
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+/*import Royal Slider Styles*/
+
+//@import "_royal-slider.scss";
+
+/*import gravity forms styles*/
+
+@import "_gravity.scss";
+
+/*import Responsive Styles*/
+
+@import "_responsive.scss";
+
+

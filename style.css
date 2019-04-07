@@ -1,0 +1,504 @@
+/*
+Theme Name: Boot Theme 4
+Theme URI: http://btcny.com
+Author: Fred Shequine
+Author URI: http://btcny.com
+Description: Bootstrap 4 based Custom theme for project.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: btc
+Text Domain: btc
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* Fonts & Mixins */
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic");
+@import url("//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic");
+/* Fonts: */
+/* Colors: */
+/* borders */
+/* general site wide styles */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+a {
+  color: #107107;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #999999;
+}
+
+/* header & navigation styles */
+.header {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+  background-color: transparent;
+}
+
+.navbar .nav-title {
+  font-size: 14px;
+  margin-right: 5px;
+  float: left;
+  position: relative;
+  top: 5px;
+}
+
+.navbar .navbar-toggler:hover {
+  color: #f95e0b;
+}
+
+.navbar .navbar-toggler:hover span, .navbar .navbar-toggler:hover i {
+  color: #f95e0b;
+}
+
+.navbar .navbar-toggler {
+  padding: 0;
+  margin-left: auto;
+  border: none;
+}
+
+.navbar .navbar-toggler:focus {
+  outline: none;
+  /* outline: 5px auto -webkit-focus-ring-color; */
+}
+
+.navbar .navbar-toggler i {
+  font-size: 26px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navbar .navbar-toggler i:hover, .navbar .navbar-toggler i:active, .navbar .navbar-toggler i:focus, .navbar .navbar-toggler button:hover, .navbar .navbar-toggler button:active, .navbar .navbar-toggler button:focus {
+  cursor: pointer;
+}
+
+.navbar .navbar-toggler.collapsed i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 25px 10px 0px;
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link.active {
+  color: #159309;
+}
+
+.navbar-nav .dropdown-item:focus, .navbar-nav .dropdown-item:hover {
+  color: #ffffff;
+  background-color: #107107;
+}
+
+.navbar-nav .dropdown-item.active, .navbar-nav .dropdown-item:active {
+  background-color: #107107;
+}
+
+/* Main styles */
+.main-column {
+  margin-top: 25px;
+  padding: 20px;
+}
+
+.main-column .main h1, .main-column .main h2, .main-column .main h3, .main-column .main h4 {
+  margin-bottom: 1rem;
+}
+
+.main-column .main .post-title {
+  color: #107107;
+  font-size: 2rem;
+}
+
+.main-column .main .post-meta {
+  font-size: 1.25rem;
+  color: #999999;
+  margin-bottom: 1rem;
+}
+
+.main-column .main .wp-post-image {
+  margin-bottom: 1rem;
+}
+
+.site-title {
+  margin: 10px 0 10px 0;
+  padding: 0 0 0 0;
+}
+
+.site-description {
+  font-size: 1.25rem;
+}
+
+/* sidebar styles */
+.sidebar-column {
+  margin-top: 50px;
+}
+
+.sidebar-column h3 {
+  font-size: 1.35rem;
+}
+
+.sidebar-column .widget-title {
+  font-size: 1.35rem;
+}
+
+.sidebar-column .input-group {
+  margin-bottom: 20px;
+}
+
+.sidebar-column input.search-field {
+  width: 65% !important;
+  margin-right: 10px;
+}
+
+/* footer  styles */
+.footer-column p {
+  border-top: 1px solid #eceeef;
+  padding-top: 20px;
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignright {
+  float: right;
+}
+
+.alignleft {
+  float: left;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*import Royal Slider Styles*/
+/*import gravity forms styles*/
+/*
+
+  gravity forms styling for Bootstrap 4
+
+*/
+.btn > .caret, .gform_button > .caret,
+.dropup > .btn > .caret,
+.dropup > .gform_button > .caret {
+  border-top-color: #000 !important;
+}
+
+.gform_fields {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.gform_fields::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-control, .gform_fields input, .gform_fields select, .gform_fields textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.15rem;
+}
+
+.gform_fields input::-ms-expand, .gform_fields select::-ms-expand, .gform_fields textarea::-ms-expand {
+  background-color: transparent;
+  border: 0;
+}
+
+.gform_fields input:focus, .gform_fields select:focus, .gform_fields textarea:focus {
+  color: #55595c;
+  background-color: #fff;
+  border-color: #66afe9;
+  outline: none;
+}
+
+.gform_fields input::-webkit-input-placeholder, .gform_fields select::-webkit-input-placeholder, .gform_fields textarea::-webkit-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.gform_fields input:-ms-input-placeholder, .gform_fields select:-ms-input-placeholder, .gform_fields textarea:-ms-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.gform_fields input::-ms-input-placeholder, .gform_fields select::-ms-input-placeholder, .gform_fields textarea::-ms-input-placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.gform_fields input::placeholder, .gform_fields select::placeholder, .gform_fields textarea::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.gform_fields input:disabled, .gform_fields select:disabled, .gform_fields textarea:disabled, .gform_fields input[readonly], .gform_fields select[readonly], .gform_fields textarea[readonly] {
+  background-color: #eceeef;
+  opacity: 1;
+}
+
+.gform_fields input:disabled, .gform_fields select:disabled, .gform_fields textarea:disabled {
+  cursor: not-allowed;
+}
+
+.gform_fields select:not([size]):not([multiple]) {
+  height: 2.5rem;
+}
+
+.gform_fields select:focus::-ms-value {
+  color: #55595c;
+  background-color: #fff;
+}
+
+.gform_fields .input-group-sm > input.form-control-static, .gform_fields .input-group-sm > select.form-control-static, .gform_fields .input-group-sm > textarea.form-control-static,
+.gform_fields .input-group-lg > input.form-control-static, .gform_fields .input-group-lg > select.form-control-static, .gform_fields .input-group-lg > textarea.form-control-static {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.gform_fields .input-group-sm > input, .gform_fields .input-group-sm > select, .gform_fields .input-group-sm > textarea {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 0.2rem;
+}
+
+.gform_fields .input-group-sm > select:not([size]):not([multiple]) {
+  height: 1.8125rem;
+}
+
+.gform_fields .input-group-lg > input, .gform_fields .input-group-lg > select, .gform_fields .input-group-lg > textarea {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+.gform_fields .input-group-lg > select:not([size]):not([multiple]) {
+  height: 3.166667rem;
+}
+
+.gform_wrapper ul.gfield_radio li, .gform_wrapper ul.gfield_checkbox li {
+  position: relative;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.gform_wrapper ul.gfield_radio li + .form-check, .gform_wrapper ul.gfield_checkbox li + .form-check, .gform_wrapper ul.gfield_radio .form-check + li, .gform_wrapper ul.gfield_radio li + li, .gform_wrapper ul.gfield_checkbox .form-check + li, .gform_wrapper ul.gfield_checkbox li + li {
+  margin-top: -.25rem;
+}
+
+.gform_wrapper ul.gfield_radio li.disabled .form-check-label, .gform_wrapper ul.gfield_checkbox li.disabled .form-check-label {
+  color: #818a91;
+  cursor: not-allowed;
+}
+
+.gform_button {
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0;
+}
+
+.gform_button:focus, .btn.focus, .focus.gform_button, .gform_button:active:focus .gform_button:active.focus, .active.gform_button:focus, .active.focus.gform_button {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+.gform_button:focus, .gform_button:hover {
+  text-decoration: none;
+}
+
+.focus.gform_button {
+  text-decoration: none;
+}
+
+.gform_button:active, .active.gform_button {
+  background-image: none;
+  outline: 0;
+}
+
+.disabled.gform_button, .gform_button:disabled {
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+a.btn.disabled, a.disabled.gform_button,
+fieldset[disabled] a.btn,
+fieldset[disabled] a.gform_button {
+  pointer-events: none;
+}
+
+gfield_description, .validation_error, .validation_message {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.validation_message {
+  background-color: #dff0d8;
+  border-color: #d0e9c6;
+  color: #3c763d;
+}
+
+.validation_message hr {
+  border-top-color: #c1e2b3;
+}
+
+.validation_message .alert-link {
+  color: #2b542c;
+}
+
+.gform_fields textarea {
+  height: auto;
+}
+
+.gfield_required {
+  color: #f95e0b !important;
+}
+
+.gform_validation_container {
+  display: none;
+}
+
+.gfield_error .ginput_container {
+  margin-bottom: 10px;
+}
+
+/* customize here */
+.gform_button {
+  padding: .50rem .75rem;
+  font-size: .875rem !important;
+  color: #ffffff;
+  background-color: #107107;
+  /**/
+  border-color: #107107;
+  /**/
+  border-radius: 0;
+  /* was maybe .2rem */
+}
+
+.gform_button:hover {
+  background-color: #094104;
+  /**/
+  border-color: #094104;
+  /**/
+}
+
+.gform_wrapper .top_label .gfield_label, .gform_wrapper legend.gfield_label {
+  color: #333333;
+  font-weight: 500;
+}
+
+@media (min-width: 544px) {
+  .form-inline .gform_fields input, .gform_fields .form-inline input, .form-inline .gform_fields select, .gform_fields .form-inline select, .form-inline .gform_fields textarea, .gform_fields .form-inline textarea {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .form-inline .input-group .gform_fields input, .gform_fields
+.form-inline .input-group input,
+  .form-inline .input-group .gform_fields select, .gform_fields
+.form-inline .input-group select,
+  .form-inline .input-group .gform_fields textarea, .gform_fields
+.form-inline .input-group textarea {
+    width: auto;
+  }
+  .form-inline .input-group > .form-control, .form-inline .gform_fields .input-group > input, .gform_fields .form-inline .input-group > input, .form-inline .gform_fields .input-group > select, .gform_fields .form-inline .input-group > select, .form-inline .gform_fields .input-group > textarea, .gform_fields .form-inline .input-group > textarea {
+    width: 100%;
+  }
+  .gform_wrapper ul.gfield_radio li, .gform_wrapper ul.gfield_radio .form-inline li, .form-inline .gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_checkbox .form-inline li {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+}
+
+/*import Responsive Styles*/
+/* Media Queries */
+@media (min-width: 992px) {
+  .header {
+    padding-top: 30px;
+    padding-left: 20px;
+  }
+  .navbar {
+    border-bottom: 1px solid #eceeef;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 25px 10px 0px;
+  }
+}
+
+@media (max-width: 575px) {
+  .navbar .container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

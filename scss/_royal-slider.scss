@@ -1,0 +1,101 @@
+
+//$overlay-yellow: #f8c549;
+
+.home-slider-wrapper {
+	.rsDefault {
+		.overlay {
+			position: absolute;
+			width: 50%;
+			padding: 10px;
+			top: 20%;
+			left: 7%;
+			z-index: 25;
+			text-align: center;
+			blockquote {
+				color: $overlay-yellow;
+				margin-bottom: 20px;
+				font-weight: 300;
+				font-size: 1.55rem;
+				line-height: 1.2;
+				p {
+					margin-bottom: 0;
+				}
+				cite {
+					display: block;
+					margin-bottom: 20px;
+				}
+			}
+			blockquote.orange {
+				color: $brand-secondary;
+			}
+			h1 {
+
+			}
+			h3, h4, h5 {
+				position: relative;
+				top: -20px;
+				text-transform: uppercase;
+				font-weight: 300;
+				font-family: $font-family-roboto;
+				font-size: .75rem;
+				margin-bottom: 35px;
+				line-height: 1.2;
+			}
+			.btn-slider {
+				color: $navy-blue;
+			    background-color: $overlay-yellow;
+			    border-color: $overlay-yellow;
+			    border-radius: 0;
+			    font-weight: 500;
+			    padding: 10px 25px;
+
+			    &:hover {
+			    	color: $navy-blue;
+			    	background-color: darken($overlay-yellow, 15%);
+    			}
+			}
+			.btn-slider.orange {
+				color: $white;
+			    background-color: $brand-secondary;
+			    border-color: $brand-secondary;
+			    border-radius: 0;
+			    font-weight: 500;
+			    padding: 10px 25px;
+
+			    &:hover {
+			    	color: $white;
+			    	background-color: darken($brand-secondary, 15%);
+			    	border-color: darken($brand-secondary, 15%);
+    			}
+			}
+			.btn-slider.blue-orange {
+				color: $navy-blue;
+			    background-color: $overlay-yellow;
+			    border-color: $overlay-yellow;
+			    border-radius: 0;
+			    font-weight: 500;
+			    padding: 10px 25px;
+
+			    &:hover {
+			    	color: $navy-blue;
+			    	background-color: darken($overlay-yellow, 15%);
+    			}
+			}
+		}
+		.overlay-mets-book {
+			img {
+				max-width: 160px;
+				position: relative;
+				top: -10px;
+			}
+		}
+	}
+	.rsBullets {
+		bottom: 10px !important;
+	    background: transparent !important;
+	}
+	.rsDefault .rsArrowIcn {
+	    background-color: transparent !important;
+	}
+
+}

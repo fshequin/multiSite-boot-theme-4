@@ -235,14 +235,14 @@ gfield_description, .validation_error, .validation_message {
     padding: .50rem .75rem;
     font-size: .875rem !important;
     color: $white;
-    background-color: $brand-secondary; /**/
-    border-color: $brand-secondary; /**/
+    background-color: $brand-primary; /**/
+    border-color: $brand-primary; /**/
     border-radius: 0; /* was maybe .2rem */
 }
 
 .gform_button:hover {
-    background-color: darken($brand-secondary, 10%); /**/
-    border-color: darken($brand-secondary, 10%);; /**/
+    background-color: darken($brand-primary, 10%); /**/
+    border-color: darken($brand-primary, 10%);; /**/
 }
 
 .gform_wrapper .top_label .gfield_label, .gform_wrapper legend.gfield_label {

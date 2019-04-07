@@ -436,18 +436,18 @@ gfield_description, .validation_error, .validation_message {
   padding: .50rem .75rem;
   font-size: .875rem !important;
   color: #ffffff;
-  background-color: #107107;
+  background-color: #c90813;
   /**/
-  border-color: #107107;
+  border-color: #c90813;
   /**/
   border-radius: 0;
   /* was maybe .2rem */
 }
 
 .gform_button:hover {
-  background-color: #094104;
+  background-color: #98060e;
   /**/
-  border-color: #094104;
+  border-color: #98060e;
   /**/
 }
 

@@ -9916,14 +9916,6 @@
 		"oS": 1,
 		"uL": 1
 		},
-	"/scss/test.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 2,
-		"oAP": "/scss/test.txt",
-		"oF": 0
-		},
 	"/searchform.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -9965,7 +9957,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 512430169,
-	"displayValue": "BTC MultiSite - boot-theme-4",
+	"displayValue": "multiSite-boot-theme-4",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "/bower_components/bootstrap/assets/img/favicons/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0

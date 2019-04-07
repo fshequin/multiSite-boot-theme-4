@@ -35,7 +35,7 @@ em {
 }
 
 a {
-  color: #f95e0b;
+  color: #570669;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -134,7 +134,7 @@ a:hover {
 }
 
 .main-column .main .post-title {
-  color: #f95e0b;
+  color: #570669;
   font-size: 2rem;
 }
 

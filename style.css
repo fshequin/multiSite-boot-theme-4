@@ -105,6 +105,24 @@ a:hover {
   transition: all .2s ease-in-out;
 }
 
+.navbar [data-toggle="collapse"]:after {
+  display: inline-block;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  content: "\f054";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: all linear 0.25s;
+  transition: all linear 0.25s;
+}
+
+.navbar [data-toggle="collapse"].collapsed:after {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .navbar-nav .nav-link {
   padding: 10px 25px 10px 0px;
   text-transform: uppercase;

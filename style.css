@@ -116,7 +116,7 @@ a:hover {
 
 .navbar .dropdown-toggle::after {
   position: absolute;
-  left: 5px;
+  right: -5px;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;

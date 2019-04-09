@@ -119,12 +119,14 @@ a:hover {
   right: 5px;
   top: 15px;
   display: inline-block;
-  font: normal normal normal 12px/1 "Font Awesome 5 Free";
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
   font-size: 14px;
+  font-weight: 900;
   text-rendering: auto;
   content: "\f107";
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
   -webkit-transition: all linear 0.25s;
   transition: all linear 0.25s;
   margin-left: 0;

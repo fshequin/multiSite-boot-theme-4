@@ -153,8 +153,8 @@ a:hover {
 		font: normal normal normal 12px/1 FontAwesome;
 		font-size: 14px;
 		text-rendering: auto;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
+		//-webkit-font-smoothing: antialiased;
+		//-moz-osx-font-smoothing: grayscale;
 		content: "\f054";
 		transform: rotate(90deg) ;
 		transition: all linear 0.25s;

@@ -122,6 +122,8 @@ a:hover {
           transform: rotate(90deg);
   -webkit-transition: all linear 0.25s;
   transition: all linear 0.25s;
+  margin-left: .255em;
+  border: none;
 }
 
 .navbar-nav .nav-link {

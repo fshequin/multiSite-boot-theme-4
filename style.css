@@ -144,7 +144,7 @@ a:hover {
 
 .navbar-nav .dropdown-item:focus, .navbar-nav .dropdown-item:hover {
   color: #ffffff;
-  background-color: #107107;
+  background-color: #c90813;
 }
 
 .navbar-nav .dropdown-item.active, .navbar-nav .dropdown-item:active {

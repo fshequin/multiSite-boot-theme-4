@@ -181,7 +181,7 @@ a:hover {
 	}
 	.dropdown-item:focus, .dropdown-item:hover {
 		color: $white;
-	    background-color: lighten($gray-green, 0%);
+	    background-color: lighten($brand-primary, 0%);
 	}
 	.dropdown-item.active, .dropdown-item:active {
 	    background-color: $brand-primary;

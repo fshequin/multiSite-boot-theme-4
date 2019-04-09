@@ -141,8 +141,13 @@ a:hover {
 			transition: all .2s ease-in-out;
 		}
 	}
+	.dropdown-toggle {
+		position: relative;
+	}
 	/*[data-toggle="collapse"]:after {*/
 	.dropdown-toggle::after {
+		position: absolute;
+		left: 5px;
 		display: inline-block;
 		//display: inline-block;
 		font: normal normal normal 14px/1 FontAwesome;

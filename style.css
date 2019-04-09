@@ -110,7 +110,13 @@ a:hover {
   transition: all .2s ease-in-out;
 }
 
+.navbar .dropdown-toggle {
+  position: relative;
+}
+
 .navbar .dropdown-toggle::after {
+  position: absolute;
+  left: 5px;
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;

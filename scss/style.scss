@@ -147,7 +147,8 @@ a:hover {
 	/*[data-toggle="collapse"]:after {*/
 	.dropdown-toggle::after {
 		position: absolute;
-		right: -5px;
+		right: 0px;
+		top: 2px;
 		display: inline-block;
 		//display: inline-block;
 		font: normal normal normal 14px/1 FontAwesome;

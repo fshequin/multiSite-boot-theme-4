@@ -115,6 +115,9 @@ a:hover {
 }
 
 .navbar .dropdown-toggle::after {
+  position: absolute;
+  right: 20px;
+  top: 11px;
   display: inline-block;
   font-family: "Font Awesome 5 Free";
   font-style: normal;
@@ -124,6 +127,8 @@ a:hover {
   font-weight: 900;
   text-rendering: auto;
   content: "\f107";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   -webkit-transition: all linear 0.25s;
   transition: all linear 0.25s;
   margin-left: 0;

@@ -35,7 +35,7 @@ em {
 }
 
 a {
-  color: #c90813;
+  color: #f95e0b;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
@@ -144,11 +144,11 @@ a:hover {
 
 .navbar-nav .dropdown-item:focus, .navbar-nav .dropdown-item:hover {
   color: #ffffff;
-  background-color: #c90813;
+  background-color: #f95e0b;
 }
 
 .navbar-nav .dropdown-item.active, .navbar-nav .dropdown-item:active {
-  background-color: #c90813;
+  background-color: #f95e0b;
 }
 
 /* Main styles */
@@ -162,7 +162,7 @@ a:hover {
 }
 
 .main-column .main .post-title {
-  color: #c90813;
+  color: #f95e0b;
   font-size: 2rem;
 }
 
@@ -464,18 +464,18 @@ gfield_description, .validation_error, .validation_message {
   padding: .50rem .75rem;
   font-size: .875rem !important;
   color: #ffffff;
-  background-color: #c90813;
+  background-color: #f95e0b;
   /**/
-  border-color: #c90813;
+  border-color: #f95e0b;
   /**/
   border-radius: 0;
   /* was maybe .2rem */
 }
 
 .gform_button:hover {
-  background-color: #98060e;
+  background-color: #cc4a05;
   /**/
-  border-color: #98060e;
+  border-color: #cc4a05;
   /**/
 }
 
